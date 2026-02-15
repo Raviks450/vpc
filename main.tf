@@ -10,5 +10,4 @@ resource "google_compute_subnetwork" "custom_subnet" {
   name          = "terraform-subnet-us-central1"
   ip_cidr_range = "10.0.1.0/24"
   region        = "us-central1"
-  network       = google_compute_network.custom_vpc_network.self_link # Link to the VPC
-}
+  network       = "vpc-network"
