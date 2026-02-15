@@ -22,3 +22,9 @@ variable "network" {
   type     = string
   default  = "default"
 }
+
+variable "mtu" {
+  type     = string
+  default  = "1460"
+}
+
