@@ -9,20 +9,13 @@ variable "region" {
 variable "zone"{
     default = "us-central1-c"
 }
-variable "machine_type"{
-    default = "n1-standard-1"
-}
+
 variable "name"{
     default = "vpc-network"
 }
 variable "image" {
     default = "projects/debian-cloud/global/images/debian-12-bookworm-v20260210"
 }
-variable "network" {
-  type     = string
-  default  = "default"
-}
-
 variable "mtu" {
   type     = string
   default  = "1460"
